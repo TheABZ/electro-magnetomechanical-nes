@@ -8,6 +8,19 @@ electro–magnetomechanical coupling*, Journal of Sound and Vibration 518 (2022)
 This implements Eq. (10) as supplied. It is a starting point for replication,
 not a validated reproduction of the paper's figures or analytical branches.
 
+## Paper-based replication study
+
+The repository now includes a reconstructed Figure 8 coupling law, the
+published Table 1/2 parameter set, five frequency sweeps, convergence checks,
+and saved plots/CSV data. Run `python reproduce.py --workers 4`.
+
+**Exact figure replication is not established:** the published mass/stiffness
+predict a locked resonance near 5.95 Hz, while the paper plots it near 4.85 Hz.
+See [REPLICATION.md](REPLICATION.md) for provenance and limitations, and
+[results/RESULTS.md](results/RESULTS.md) for the numerical findings.
+`nes.py` remains the minimal illustrative example; `reproduce.py` uses the
+paper-based inputs.
+
 ## Quick start
 
 Use Python 3.10 or newer:
