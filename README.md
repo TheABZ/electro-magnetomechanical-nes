@@ -21,6 +21,15 @@ See [REPLICATION.md](REPLICATION.md) for provenance and limitations, and
 `nes.py` remains the minimal illustrative example; `reproduce.py` uses the
 paper-based inputs.
 
+## Calibrated alternative
+
+Run `python calibrated.py --workers 4` for the separate stiffness-calibrated
+study. It retains the reported masses and infers k1=60,804.41 N/m from the
+approximate plotted locked resonance at 4.85 Hz. This is an inferred calibration,
+not a confirmed correction to the paper. See [CALIBRATION.md](CALIBRATION.md)
+for the derivation, plots, remaining discrepancies and validation checks.
+Original results are preserved; new outputs are in `results/calibrated/`.
+
 ## Quick start
 
 Use Python 3.10 or newer:

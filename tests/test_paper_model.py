@@ -11,6 +11,20 @@ from reproduce import run_point
 
 
 class PaperTests(unittest.TestCase):
+    def test_calibrated_resonance_and_unchanged_parameters(self):
+        from paper_model import calibrated_parameters
+        from dataclasses import asdict
+        original, calibrated = paper_parameters(), calibrated_parameters(frequency_hz=6.)
+        self.assertAlmostEqual(locked_peak(calibrated)[0], 4.85, places=12)
+        self.assertAlmostEqual(calibrated.k1, 60804.45, delta=1.)
+        for key, value in asdict(original).items():
+            if key != 'k1':
+                self.assertEqual(value, asdict(calibrated)[key])
+        self.assertEqual(original.k1, 91324.)
+        for invalid in (0., -1., float('nan')):
+            with self.assertRaises(ValueError):
+                calibrated_parameters(target_hz=invalid)
+
     def test_reported_values_and_circuits(self):
         p = paper_parameters()
         self.assertEqual((p.m1, p.m2, p.k1, p.Rc, p.Ri), (64., 1.4, 91324., 11.6, 0.))
