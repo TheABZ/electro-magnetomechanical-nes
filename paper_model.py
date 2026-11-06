@@ -32,3 +32,18 @@ def locked_peak(p):
     mass = p.m1+p.m2
     omega_peak = np.sqrt(p.k1/mass-p.c1**2/(2*mass**2))
     return float(omega_peak/(2*np.pi)), float(locked_amplitude(omega_peak/(2*np.pi), p))
+
+
+def calibrated_parameters(force=25., frequency_hz=4.85, circuit='closed', target_hz=4.85):
+    """Infer k1 from the approximate plotted locked displacement-resonance peak.
+
+    Masses and damping remain reported values. This is a calibration hypothesis,
+    not a verified correction or an author-supplied parameter.
+    """
+    from dataclasses import replace
+    if not np.isfinite(target_hz) or target_hz <= 0:
+        raise ValueError('target_hz must be positive and finite')
+    p = paper_parameters(force, frequency_hz, circuit)
+    mass = p.m1+p.m2
+    k1 = mass*(2*np.pi*target_hz)**2 + p.c1**2/(2*mass)
+    return replace(p, k1=k1)

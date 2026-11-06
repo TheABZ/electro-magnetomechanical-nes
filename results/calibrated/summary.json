@@ -1,0 +1,112 @@
+{
+  "status": "Inferred stiffness calibration; not a confirmed correction to the paper",
+  "settings": {
+    "workers": 4,
+    "target_hz": 4.85,
+    "cycles": 160,
+    "samples": 80,
+    "points": 41
+  },
+  "calibrated_k1_N_per_m": 60804.40675840627,
+  "published_k1_N_per_m": 91324.0,
+  "locked_peak_hz_m": [
+    4.85,
+    0.00845508749387547
+  ],
+  "sensitivity_k1_N_per_m": {
+    "4.8": 59558.64555169198,
+    "4.85": 60804.40675840627,
+    "4.9": 62063.07740767722
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "comparisons": {
+    "5N_open_up": {
+      "max_peak_m": 0.001607572693451002,
+      "frequency_hz": 4.95,
+      "window_flags": 0,
+      "range_flags": 0
+    },
+    "25N_open_up": {
+      "max_peak_m": 0.008273042635956768,
+      "frequency_hz": 4.75,
+      "window_flags": 0,
+      "range_flags": 0
+    },
+    "25N_open_down": {
+      "max_peak_m": 0.008273040398926923,
+      "frequency_hz": 4.75,
+      "window_flags": 2,
+      "range_flags": 0
+    },
+    "25N_closed_up": {
+      "max_peak_m": 0.004312340211804387,
+      "frequency_hz": 5.1,
+      "window_flags": 0,
+      "range_flags": 0
+    },
+    "25N_closed_down": {
+      "max_peak_m": 0.004312182451656605,
+      "frequency_hz": 5.1,
+      "window_flags": 0,
+      "range_flags": 0
+    }
+  },
+  "checks": [
+    {
+      "circuit": "open",
+      "frequency_hz": 4.7,
+      "peak_m": 0.007520855245646102,
+      "resolution_change": 1.5554225388158813e-12,
+      "duration_change": 6.149896696162342e-05,
+      "late_window_change": 5.9859806482920496e-05,
+      "fit_range_ok": true
+    },
+    {
+      "circuit": "open",
+      "frequency_hz": 4.85,
+      "peak_m": 0.005545539984791506,
+      "resolution_change": 2.4217603658656096e-11,
+      "duration_change": 7.146581554552752e-05,
+      "late_window_change": 6.805256921681397e-05,
+      "fit_range_ok": true
+    },
+    {
+      "circuit": "open",
+      "frequency_hz": 5.1,
+      "peak_m": 0.0009743031290031691,
+      "resolution_change": 0.00031196123566517816,
+      "duration_change": 0.0021300513744943656,
+      "late_window_change": 0.002093184450621071,
+      "fit_range_ok": true
+    },
+    {
+      "circuit": "closed",
+      "frequency_hz": 4.7,
+      "peak_m": 0.0033102084643171375,
+      "resolution_change": 0.000305668202750046,
+      "duration_change": 1.888679194560371e-05,
+      "late_window_change": 1.8495025553494096e-05,
+      "fit_range_ok": true
+    },
+    {
+      "circuit": "closed",
+      "frequency_hz": 4.85,
+      "peak_m": 0.0033211809613013015,
+      "resolution_change": 0.0003078055316213641,
+      "duration_change": 8.062420628780601e-12,
+      "late_window_change": 8.086316827136152e-12,
+      "fit_range_ok": true
+    },
+    {
+      "circuit": "closed",
+      "frequency_hz": 5.1,
+      "peak_m": 0.004312397009661815,
+      "resolution_change": 5.273685312159936e-13,
+      "duration_change": 1.253778866641918e-06,
+      "late_window_change": 6.311124504260714e-05,
+      "fit_range_ok": true
+    }
+  ]
+}
