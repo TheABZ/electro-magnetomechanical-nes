@@ -1,0 +1,68 @@
+[
+  {
+    "circuit": "open",
+    "frequency_hz": 4.85,
+    "peak_m": 0.0007605567730804995,
+    "refined_peak_m": 0.0007605567730804995,
+    "extended_peak_m": 0.0007605506736595638,
+    "resolution_relative_change": 0.0,
+    "duration_relative_change": 8.019678676922838e-06,
+    "late_window_relative_change": 7.605003305076199e-06,
+    "fit_range_ok": true
+  },
+  {
+    "circuit": "open",
+    "frequency_hz": 5.95,
+    "peak_m": 0.003613276905588969,
+    "refined_peak_m": 0.0036132768621910333,
+    "extended_peak_m": 0.0036105483733450115,
+    "resolution_relative_change": 1.201068641749075e-08,
+    "duration_relative_change": 0.0007551406424836234,
+    "late_window_relative_change": 0.0320252267890676,
+    "fit_range_ok": true
+  },
+  {
+    "circuit": "open",
+    "frequency_hz": 6.2,
+    "peak_m": 0.004162461647242826,
+    "refined_peak_m": 0.004162461647242826,
+    "extended_peak_m": 0.00416227524009403,
+    "resolution_relative_change": 0.0,
+    "duration_relative_change": 4.4782910833552596e-05,
+    "late_window_relative_change": 4.445183479538231e-05,
+    "fit_range_ok": true
+  },
+  {
+    "circuit": "closed",
+    "frequency_hz": 4.85,
+    "peak_m": 0.0007648702209910826,
+    "refined_peak_m": 0.0007650047526926977,
+    "extended_peak_m": 0.0007648693504463957,
+    "resolution_relative_change": 0.0001758882721839505,
+    "duration_relative_change": 1.138159995003482e-06,
+    "late_window_relative_change": 1.1369595354689506e-06,
+    "fit_range_ok": true
+  },
+  {
+    "circuit": "closed",
+    "frequency_hz": 5.95,
+    "peak_m": 0.004690901730391574,
+    "refined_peak_m": 0.004690901730389749,
+    "extended_peak_m": 0.004690901620041775,
+    "resolution_relative_change": 3.8922078598162843e-13,
+    "duration_relative_change": 2.3524218999421893e-08,
+    "late_window_relative_change": 2.3503295377501856e-08,
+    "fit_range_ok": true
+  },
+  {
+    "circuit": "closed",
+    "frequency_hz": 6.2,
+    "peak_m": 0.0038685392408585057,
+    "refined_peak_m": 0.0038685392408585057,
+    "extended_peak_m": 0.003868537459209284,
+    "resolution_relative_change": 0.0,
+    "duration_relative_change": 4.6054831317223335e-07,
+    "late_window_relative_change": 4.5950781923182767e-07,
+    "fit_range_ok": true
+  }
+]

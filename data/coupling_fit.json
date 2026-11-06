@@ -1,0 +1,43 @@
+{
+  "source": "Cadiou et al. (2022), Figure 8 red approximation; Eq. 11",
+  "doi": "10.1016/j.jsv.2021.116508",
+  "status": "reconstructed from raster figure, not author-supplied coefficients",
+  "pdf_sha256": "3097db588afda9608fbe83fa2e49b050a210da6deefa314280dc2bb25ed73d87",
+  "image_size_px": [
+    1000,
+    773
+  ],
+  "axes_px": [
+    128.0,
+    970.0,
+    16.0,
+    649.0
+  ],
+  "valid_y_m": [
+    -0.04,
+    0.04
+  ],
+  "theta_coeffs": [
+    12.563726751339457,
+    0.0,
+    -33915.36395539864,
+    0.0,
+    37345566.37296712,
+    0.0,
+    -17753843382.222317,
+    0.0,
+    2945478547081.4155
+  ],
+  "normalized_even_coeffs": [
+    12.563726751339457,
+    -54.264582328637836,
+    95.60464991479583,
+    -72.71974249358263,
+    19.303488206152768
+  ],
+  "scale_m": 0.04,
+  "samples": 837,
+  "rmse_Vs_per_m": 0.016468844796950082,
+  "max_residual_Vs_per_m": 0.06971282025291714,
+  "uncertainty": "Pixel calibration and line thickness are not quantified confidence intervals"
+}
